@@ -19,6 +19,9 @@
     <nav class="nav-links">
       <a href="systems.html">Systems</a>
       <a href="contact.html">Contact</a>
+      <button id="modeToggle" style="background:none;border:1px solid #fff;color:#fff;padding:6px 12px;border-radius:6px;cursor:pointer;">
+  Light / Dark
+</button>
     </nav>
   </header>
 
@@ -120,6 +123,12 @@
   <footer class="footer">
     HUMAN-AI © 2025 — Quiet AI systems for real operations.
   </footer>
+  <script>
+document.getElementById("modeToggle").onclick = function() {
+    document.body.classList.toggle("light-mode");
+};
+</script>
 </body>
 
 </html>
+
