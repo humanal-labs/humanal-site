@@ -345,3 +345,17 @@ nav:hover {
   background: rgba(255, 255, 255, 0.08);
   padding: 18px 0;
 }
+.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+.light-mode nav a {
+  color: #000;
+}
+
+.light-mode button {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
