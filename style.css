@@ -400,7 +400,17 @@ nav:hover {
 /* ----------------------------- */
 /* LIGHT MODE AKTİF OLUNCA       */
 /* ----------------------------- */
-
+body.light-mode .navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+body.light-mode .nav-links {
+    background: transparent !important;
+}
+body.light-mode .nav-links a {
+    background: none !important;
+}
 body.light-mode {
     background: #f8f8f8;
     color: #111;
@@ -458,6 +468,7 @@ body.light-mode textarea {
 body.light-mode .footer {
     color: #444;
 }
+
 
 
 
