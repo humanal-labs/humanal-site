@@ -1,0 +1,338 @@
+/* ==== GLOBAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  background: #05070b;
+  color: #f5f5f5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+}
+
+/* ==== LAYOUT ==== */
+
+.navbar {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #c5f8ff, #2af5c1 40%, #021b1b);
+  box-shadow: 0 0 16px rgba(42, 245, 193, 0.7);
+}
+
+.brand-text {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
+.brand-sub {
+  font-size: 10px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* ==== HERO / INDEX ==== */
+
+.hero {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  background: rgba(5, 255, 175, 0.07);
+  border: 1px solid rgba(5, 255, 175, 0.4);
+  color: #a7ffe4;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2af5c1;
+  box-shadow: 0 0 10px rgba(42, 245, 193, 0.9);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 32px;
+}
+
+.hero-title {
+  font-size: clamp(32px, 4vw, 40px);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero-title span.accent {
+  color: #45ffc8;
+}
+
+.hero-sub {
+  font-size: 14px;
+  opacity: 0.8;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #34f1c1, #00b3ff);
+  color: #02040a;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: rgba(144, 178, 255, 0.6);
+  color: #c5d5ff;
+}
+
+.btn-outline:hover {
+  background: rgba(16, 32, 80, 0.7);
+}
+
+/* Right card */
+
+.hero-card {
+  border-radius: 20px;
+  padding: 20px 18px;
+  background: radial-gradient(circle at 0% 0%, rgba(95, 255, 207, 0.15), transparent 55%),
+    #05070b;
+  border: 1px solid rgba(96, 128, 255, 0.35);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.card-label {
+  font-size: 11px;
+  opacity: 0.7;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.card-metric {
+  font-size: 26px;
+  margin: 10px 0 4px;
+}
+
+.card-metric span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.card-text {
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* ==== SYSTEMS GRID ==== */
+
+.section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 70px;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.section-sub {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-bottom: 22px;
+  max-width: 520px;
+}
+
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.system-card {
+  padding: 18px 16px;
+  border-radius: 14px;
+  background: radial-gradient(circle at 0% 0%, rgba(53, 232, 191, 0.12), transparent 55%),
+    #060910;
+  border: 1px solid rgba(80, 112, 190, 0.6);
+}
+
+.system-tag {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.system-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.system-desc {
+  font-size: 12px;
+  opacity: 0.78;
+  margin-bottom: 10px;
+}
+
+.system-list {
+  list-style: none;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.system-list li {
+  margin-bottom: 6px;
+}
+
+/* ==== CONTACT ==== */
+
+.contact-wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.contact-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form label {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 4px;
+  padding: 10px 11px;
+  border-radius: 10px;
+  border: 1px solid rgba(98, 128, 210, 0.7);
+  background: rgba(4, 7, 15, 0.9);
+  color: #f5f7ff;
+  font-size: 13px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-note {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+/* ==== FOOTER ==== */
+
+.footer {
+  border-top: 1px solid rgba(40, 60, 110, 0.8);
+  padding: 14px 20px 18px;
+  font-size: 11px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ==== RESPONSIVE ==== */
+
+@media (max-width: 720px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
