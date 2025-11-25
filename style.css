@@ -358,4 +358,18 @@ nav:hover {
   color: #000 !important;
   border-color: #000 !important;
 }
+.system-box {
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.02);
+}
+
+.system-box:hover {
+  box-shadow: 0 0 20px rgba(0,255,200,0.25);
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.05);
+}
+
 
