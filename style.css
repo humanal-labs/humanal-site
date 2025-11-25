@@ -335,4 +335,13 @@ main {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+
+}
+nav {
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+nav:hover {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px 0;
 }
