@@ -61,6 +61,12 @@
           We usually respond within 24 hours.
         </p>
       </form>
+      <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Request sent successfully!");
+});
+</script>
     </section>
   </main>
 
@@ -70,3 +76,4 @@
 </body>
 
 </html>
+
