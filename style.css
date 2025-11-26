@@ -468,6 +468,26 @@ body.light-mode textarea {
 body.light-mode .footer {
     color: #444;
 }
+/* ---------------- NAV ---------------- */
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.top-nav a {
+  font-size: 18px;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffffff;
 
 
 
