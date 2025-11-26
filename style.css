@@ -488,6 +488,33 @@ body.light-mode .footer {
 
 .top-nav a:hover {
   color: #ffffff;
+  /* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.top-nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 8px 14px;
+  transition: 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffd700;
+}
+
+.top-nav a.active {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 6px;
+}
+
 
 
 
